@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Math Issue</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script language="javascript">
+            function parse_it()
+            {
+             alert(calcs.a.value);
+             a=calcs.a.value;
+             c=calcs.c.value;
+             b=calcs.b.value;
+              
+             var w = '{"a":a,"b":b,"c",c}',
+             
+             calcs.w.value=JSON.parse(calcs.w.value);
+           
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <img src="jk.jpg"/>
+        <div>
+            <form name="calcs" method="post"  action="http://localhost:8080/WebApplication2/webresources/generic">
+           
+                <h3><b>
+                        <input name="json" type="hidden"><br>
+                        A = <input name="a" type="text"><br>
+                        B = <input  type="text" name="b"><br>
+                        C = <input  type="text" name="c"><br>
+                        <input type="submit" value="Click" onclick="parse_it();" style="font-size: 5">
+                    </b></h3>
+                <input name="p" type="text"><br>
+            </form>
+         
+                </div>
+        </center>
+    </body>
+</html>
